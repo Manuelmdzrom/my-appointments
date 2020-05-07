@@ -1,10 +1,16 @@
-{
-        name: 'Citas atendidas',
-        data: [49, 71, 106]
-		       
-    },{
-    		name: 'Citas canceladas',
-        data: [6, 7, 4]
-    }
-
-    factory(Appointments::class, 50)->states('patient')->create();
+<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/label_doctor"></TextView>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Spinner>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/label_schedule_date"></TextView>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></EditText>
