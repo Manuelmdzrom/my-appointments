@@ -42,6 +42,8 @@ Route::middleware(['auth', 'doctor'])->namespace('Doctor')->group(function () {
 
 Route::middleware('auth')->group(function () { 
 
+    //Appointments -> verfificar 
+    //Que variables pasar a la vista 
     Route::get('/appointments/create', 'AppointmentController@create');
     Route::post('/appointments', 'AppointmentController@store');
     Route::get('/appointments', 'AppointmentController@index');
@@ -50,8 +52,5 @@ Route::middleware('auth')->group(function () {
     Route::post('/appointments/{appointment}/cancel', 'AppointmentController@postCancel');
     Route::post('/appointments/{appointment}/confirm', 'AppointmentController@postConfirm');
 
-    //JSON
-    Route::get('/specialties/{specialty}/doctors', 'Api\SpecialtyController@doctors');
-    Route::get('/schedule/hours', 'Api\ScheduleController@hours');
 
 });

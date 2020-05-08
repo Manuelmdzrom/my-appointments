@@ -110,6 +110,8 @@ class ComposerStaticInit9b94bc4218881a6cfac3fffb04a23cb9
         'M' => 
         array (
             'Monolog\\' => 8,
+            'MiladRahimi\\LaraJwt\\' => 20,
+            'MiladRahimi\\LaraJwtTests\\' => 25,
         ),
         'L' => 
         array (
@@ -340,6 +342,14 @@ class ComposerStaticInit9b94bc4218881a6cfac3fffb04a23cb9
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'MiladRahimi\\LaraJwt\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/miladrahimi/larajwt/src/MiladRahimi/LaraJwt',
+        ),
+        'MiladRahimi\\LaraJwtTests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/miladrahimi/larajwt/tests',
         ),
         'League\\Flysystem\\' => 
         array (
@@ -2439,6 +2449,21 @@ class ComposerStaticInit9b94bc4218881a6cfac3fffb04a23cb9
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
+        'MiladRahimi\\LaraJwtTests\\Classes\\Person' => __DIR__ . '/..' . '/miladrahimi/larajwt/tests/Classes/Person.php',
+        'MiladRahimi\\LaraJwtTests\\Classes\\SomeException' => __DIR__ . '/..' . '/miladrahimi/larajwt/tests/Classes/SomeException.php',
+        'MiladRahimi\\LaraJwtTests\\JwtAuthTest' => __DIR__ . '/..' . '/miladrahimi/larajwt/tests/JwtAuthTest.php',
+        'MiladRahimi\\LaraJwtTests\\JwtGuardTest' => __DIR__ . '/..' . '/miladrahimi/larajwt/tests/JwtGuardTest.php',
+        'MiladRahimi\\LaraJwtTests\\JwtServiceTest' => __DIR__ . '/..' . '/miladrahimi/larajwt/tests/JwtServiceTest.php',
+        'MiladRahimi\\LaraJwtTests\\LaraJwtTestCase' => __DIR__ . '/..' . '/miladrahimi/larajwt/tests/LaraJwtTestCase.php',
+        'MiladRahimi\\LaraJwt\\Exceptions\\InvalidJwtException' => __DIR__ . '/..' . '/miladrahimi/larajwt/src/MiladRahimi/LaraJwt/Exceptions/InvalidJwtException.php',
+        'MiladRahimi\\LaraJwt\\Exceptions\\LaraJwtConfiguringException' => __DIR__ . '/..' . '/miladrahimi/larajwt/src/MiladRahimi/LaraJwt/Exceptions/LaraJwtConfiguringException.php',
+        'MiladRahimi\\LaraJwt\\Facades\\JwtAuth' => __DIR__ . '/..' . '/miladrahimi/larajwt/src/MiladRahimi/LaraJwt/Facades/JwtAuth.php',
+        'MiladRahimi\\LaraJwt\\Guards\\Jwt' => __DIR__ . '/..' . '/miladrahimi/larajwt/src/MiladRahimi/LaraJwt/Guards/Jwt.php',
+        'MiladRahimi\\LaraJwt\\Providers\\ServiceProvider' => __DIR__ . '/..' . '/miladrahimi/larajwt/src/MiladRahimi/LaraJwt/Providers/ServiceProvider.php',
+        'MiladRahimi\\LaraJwt\\Services\\JwtAuth' => __DIR__ . '/..' . '/miladrahimi/larajwt/src/MiladRahimi/LaraJwt/Services/JwtAuth.php',
+        'MiladRahimi\\LaraJwt\\Services\\JwtAuthInterface' => __DIR__ . '/..' . '/miladrahimi/larajwt/src/MiladRahimi/LaraJwt/Services/JwtAuthInterface.php',
+        'MiladRahimi\\LaraJwt\\Services\\JwtService' => __DIR__ . '/..' . '/miladrahimi/larajwt/src/MiladRahimi/LaraJwt/Services/JwtService.php',
+        'MiladRahimi\\LaraJwt\\Services\\JwtServiceInterface' => __DIR__ . '/..' . '/miladrahimi/larajwt/src/MiladRahimi/LaraJwt/Services/JwtServiceInterface.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV5.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV6' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV6.php',
