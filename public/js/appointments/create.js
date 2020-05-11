@@ -3,7 +3,7 @@ let iRadio;
 const noHoursAlert =`<div class="alert alert-danger" role="alert">
 <strong>Lo sentimos!</strong> No se encontraron horas disponibles para el Médico seleccionado.
 </div>`;
-
+ 
       $(function () {
         $specialty = $('#specialty');
         $doctor = $('#doctor');
@@ -22,7 +22,10 @@ const noHoursAlert =`<div class="alert alert-danger" role="alert">
       });
 
       function onDoctorsLoaded(doctors) {
+        console.log(doctors)
+
         let htmlOptions = '';
+
         doctors.forEach(doctor => {
           htmlOptions += `<option value="${doctor.id}">${doctor.name}</option>`;
         });

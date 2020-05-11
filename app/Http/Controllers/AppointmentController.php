@@ -158,7 +158,7 @@ class AppointmentController extends Controller
                 
                 $appointment->cancellation()->save($cancellation);
         }
-        $appointment->status = 'Cancelada';
+        $appointment->status = 'Cancelada'; 
         $appointment->save();  //update
 
         $notification = "La cita se ha cancelado correctamente.";
