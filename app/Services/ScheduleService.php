@@ -48,9 +48,10 @@ class ScheduleService implements ScheduleServiceInterface
                 $date, $doctorId
             );   
             $afternoonIntervals = $this->getIntervals(
-            $workDay->afternoon_start,$workDay->afternoon_end,
-            $date, $doctorId
-            );      
+                $workDay->afternoon_start,$workDay->afternoon_end,
+                $date, $doctorId
+            );
+                  
         }else{
             $morningIntervals = [];
             $afternoonIntervals =[];
