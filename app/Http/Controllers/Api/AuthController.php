@@ -23,7 +23,7 @@ class AuthController extends Controller
             // Return successfull sign in response with the generated jwt.
         } else {
             // Return response for failed attempt...
-            $success = true;
+            $success = false;
             $message = 'Invalid credentials';
             return compact('success', 'message');
 
