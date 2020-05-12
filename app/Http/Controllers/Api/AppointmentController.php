@@ -11,12 +11,12 @@ class AppointmentController extends Controller
     public function index()
     {
         $user = Auth::guard('api')->user();
-        $appointments = $user->asPatientAppointments()
+        return $user->asPatientAppointments()
         ->with([
-            'specialty' => function (){
+            'specialty' => function ($query){
             $query->select('id','name');
         },
-            'doctor' => function (){
+            'doctor' => function ($query){
             $query->select('id','name');
         }
          ])
@@ -31,6 +31,7 @@ class AppointmentController extends Controller
             "created_at",
             "status"
         ]);
+        
         return $appointments;
     }
     public function store()
