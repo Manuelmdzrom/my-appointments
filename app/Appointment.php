@@ -18,7 +18,7 @@ class Appointment extends Model
     ];
 
     protected $hidden = [
-        'specialty_id', 'doctor_id', 'schedule_time_12'
+        'specialty_id', 'doctor_id', 'schedule_time'
     ];
 
     protected $appends = [
