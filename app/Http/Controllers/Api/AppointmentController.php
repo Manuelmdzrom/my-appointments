@@ -14,10 +14,10 @@ class AppointmentController extends Controller
         $appointments = $user->asPatientAppointments()
         ->with([
             'specialty' => function (){
-            $query->select('id','name')
+            $query->select('id','name');
         },
             'doctor' => function (){
-            $query->select('id','name')
+            $query->select('id','name');
         }
          ])
         ->get([
