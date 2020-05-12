@@ -16,6 +16,14 @@ class Appointment extends Model
         'schedule_time',
         'type'
     ];
+
+    protected $hidden = [
+        'specialty_id', 'doctor_id', 'schedule_time_12'
+    ];
+
+    protected $appends = [
+        'schedule_time_12'
+    ];
     /*
     protected $dates = [
         'schedule_time' // create FormFormat
