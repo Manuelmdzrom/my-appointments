@@ -44,8 +44,8 @@ class AppointmentController extends Controller
         if ($appointment)
             $success = true;
         else        
-            %success = false;
-            
+            $success = false;
+
         return campact('success')
     }    
 }
