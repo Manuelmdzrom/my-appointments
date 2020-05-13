@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 use Carbon\Carbon;
 
 class Appointment extends Model
@@ -58,4 +59,23 @@ class Appointment extends Model
      {
         return $this->hasOne(CancelledAppointment::class);
      }
+     static public function createForPatient(Request $request, $patientId){
+        
+        $data = $request->only([
+            'description',
+            'specialty_id',
+            'doctor_id',
+            'schedule_date',
+            'schedule_time',
+            'type'
+        ]);
+
+        $data['patient_id']= $patientId;
+
+        //Formato que acepte mysql obtenido desde el formulario
+        $carbonTime = Carbon::createFromFormat('g:i A', $data['schedule_time']);
+        $data['schedule_time'] = $carbonTime->format('H:i:s');
+        
+        return self::create($data);
+     } // appointment->create
 }
