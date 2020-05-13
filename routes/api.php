@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 */
 //Ruta para la autentificación
 Route::post('/login', 'AuthController@login');
+Route::post('/register', 'AuthController@register');
 
 //Public resources
 //JSON
