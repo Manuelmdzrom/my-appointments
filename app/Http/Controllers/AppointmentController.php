@@ -131,7 +131,7 @@ class AppointmentController extends Controller
         $appointment->status = 'Confirmada';
         $saved = $appointment->save();  //update
 
-        if (saved)
+        if ($saved)
             $appointment->patient->sendFCM('Su cita se ha confirmado');
 
         $notification = "La cita se ha confirmada correctamente.";
