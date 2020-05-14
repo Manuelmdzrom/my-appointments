@@ -73,4 +73,16 @@ class User extends Authenticatable
     {
         return $this->hasMany(Appointment::class, 'patient_id');
     }
+    public function sendFCM($message)
+    {
+        return fcm()->to([
+                $this->device_token
+            ]) // $recipients must an array
+            ->priority('high')
+            ->timeToLive(0)
+            ->notification([
+                'title' => config('app.name'),
+                'body' => $message,
+            ])->send();
+    }
 }
