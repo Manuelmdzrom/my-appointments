@@ -63,8 +63,6 @@
                         <i class="ni ni-fat-delete"></i>
                         </button>
                       </form>  
-                    @endif
-                    
                     </td>
                   </tr>
                   @endforeach
