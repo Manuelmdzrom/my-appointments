@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        Commands\SendNotifications::class;
     ];
 
     /**
@@ -30,7 +30,6 @@ class Kernel extends ConsoleKernel
          ->everyFiveMinutes()
          ->appendOutputTo($filePath);
     }
-
     /**
      * Register the commands for the application.
      *
