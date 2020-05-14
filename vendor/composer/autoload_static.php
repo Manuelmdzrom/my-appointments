@@ -34,6 +34,7 @@ class ComposerStaticInit9b94bc4218881a6cfac3fffb04a23cb9
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
+        'e82eb7f657451ddca8d351a3ae8f2eb8' => __DIR__ . '/..' . '/kawankoding/laravel-fcm/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -118,6 +119,10 @@ class ComposerStaticInit9b94bc4218881a6cfac3fffb04a23cb9
             'League\\Flysystem\\' => 17,
             'Lcobucci\\JWT\\' => 13,
             'Laravel\\Tinker\\' => 15,
+        ),
+        'K' => 
+        array (
+            'Kawankoding\\Fcm\\' => 16,
         ),
         'J' => 
         array (
@@ -363,6 +368,10 @@ class ComposerStaticInit9b94bc4218881a6cfac3fffb04a23cb9
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
+        'Kawankoding\\Fcm\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kawankoding/laravel-fcm/src',
+        ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
             0 => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src',
@@ -497,6 +506,7 @@ class ComposerStaticInit9b94bc4218881a6cfac3fffb04a23cb9
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Admin\\ChartController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ChartController.php',
         'App\\Http\\Controllers\\Admin\\DoctorController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/DoctorController.php',
+        'App\\Http\\Controllers\\Admin\\FirebaseController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/FirebaseController.php',
         'App\\Http\\Controllers\\Admin\\PatientController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/PatientController.php',
         'App\\Http\\Controllers\\Admin\\SpecialtyController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/SpecialtyController.php',
         'App\\Http\\Controllers\\Api\\AppointmentController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/AppointmentController.php',
@@ -2368,6 +2378,9 @@ class ComposerStaticInit9b94bc4218881a6cfac3fffb04a23cb9
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
+        'Kawankoding\\Fcm\\Fcm' => __DIR__ . '/..' . '/kawankoding/laravel-fcm/src/Fcm.php',
+        'Kawankoding\\Fcm\\FcmFacade' => __DIR__ . '/..' . '/kawankoding/laravel-fcm/src/FcmFacade.php',
+        'Kawankoding\\Fcm\\FcmServiceProvider' => __DIR__ . '/..' . '/kawankoding/laravel-fcm/src/FcmServiceProvider.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',

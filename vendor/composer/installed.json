@@ -1221,6 +1221,55 @@
         "abandoned": "php-parallel-lint/php-console-highlighter"
     },
     {
+        "name": "kawankoding/laravel-fcm",
+        "version": "0.2.1",
+        "version_normalized": "0.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kawankoding/laravel-fcm.git",
+            "reference": "c4f703b4f36bb572644db6dacab521a5e5dc678f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kawankoding/laravel-fcm/zipball/c4f703b4f36bb572644db6dacab521a5e5dc678f",
+            "reference": "c4f703b4f36bb572644db6dacab521a5e5dc678f",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "^5.1|^6.0|^7.0",
+            "php": "^5.6|^7.0"
+        },
+        "time": "2020-04-13T22:50:25+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Kawankoding\\Fcm\\FcmServiceProvider"
+                ],
+                "aliases": {
+                    "Fcm": "Kawankoding\\Fcm\\FcmFacade"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Kawankoding\\Fcm\\": "src/"
+            },
+            "files": [
+                "src/helpers.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Muhammad Amirul Ihsan",
+                "email": "muh.amirul.ihsan@gmail.com"
+            }
+        ],
+        "description": "A package to send Firebase notification cross Laravel Application"
+    },
+    {
         "name": "kylekatarnls/update-helper",
         "version": "1.2.1",
         "version_normalized": "1.2.1.0",
