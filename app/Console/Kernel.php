@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Commands\SendNotifications::class;
+        Commands\SendNotifications::class
     ];
 
     /**
@@ -27,7 +27,7 @@ class Kernel extends ConsoleKernel
         $filePath = storage_path('logs/fcm_send.log');
 
          $schedule->command('fcm:send')
-         ->everyFiveMinutes()
+         ->everyMinute()
          ->appendOutputTo($filePath);
     }
     /**
