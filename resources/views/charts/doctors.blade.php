@@ -5,7 +5,7 @@
         <div class="card-header border-0">
             <div class="row align-items-center">
                 <div class="col">
-                  <h3 class="mb-0">Reporte: Médicos más activos</h3>
+                  <h3 class="mb-0">Reporte: Encargados más activos</h3>
                 </div>
             </div>
         </div>
@@ -32,10 +32,10 @@
                         </div>
                     </div>
                 </div>
-            <div id="container"></div> 
+            <div id="container"></div>
         </div>
     </div>
-@endsection 
+@endsection
 @section('scripts')
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>

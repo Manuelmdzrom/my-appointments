@@ -43,7 +43,7 @@ $(function(){
 							}
 
 							content += '<span class="popover-body-value">' + yLabel + '</span>';
-							
+
 							return content;
 						}
 					}
@@ -52,7 +52,7 @@ $(function(){
 			data: {
 				labels: [ 'Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sab'],
 				datasets: [{
-					label: 'Citas Médicas',
+					label: 'Citas',
 					data:  appointmentsByDay
 				}]
 			}

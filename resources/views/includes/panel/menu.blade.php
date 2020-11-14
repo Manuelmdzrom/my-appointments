@@ -2,13 +2,13 @@
 <h6 class="navbar-heading text-muted">
   @if (auth()->user()->role == 'admin')
     Gestionar Datos
-  @else 
+  @else
     Menú
   @endif
 </h6>
 <ul class="navbar-nav">
       @include('includes.panel.menu.' . auth()->user()->role)
-     
+
         <li class="nav-item">
           <a class="nav-link" href="{{ route('logout')}}" onclick="event.preventDefault(); document.getElementById('formLogout').submit();">
             <i class="ni ni-key-25"></i> Cerrar Sesión
@@ -31,7 +31,7 @@
           </a>
         </li>  <li class="nav-item">
           <a class="nav-link" href="{{ url('/charts/doctors/column') }}">
-            <i class="ni ni-spaceship "></i> Médicos más activos
+            <i class="ni ni-spaceship "></i> Encargados más activos
           </a>
         </li>
       </ul>

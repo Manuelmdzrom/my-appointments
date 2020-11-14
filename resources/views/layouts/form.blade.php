@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
-  <meta name="author" content="Creative Tim">
+  <meta name="author" content="Manuel Mendoza">
   <title>{{config('app.name') }} | @yield('title')</title>
   <!-- Favicon -->
   <link href="{{ asset ('img/brand/favicon.png" rel="icon" type="image/png') }}">
@@ -25,7 +25,7 @@
       <div class="container px-4">
         <a class="navbar-brand" href="{{ url('/') }}">
          <!-- Insertar Logo mío -->
-          <img src="{{ asset('img/brand/white.png') }}" />
+          <img src="{{ asset('img/brand/sistema-control-citas.png') }}" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
             <div class="row">
               <div class="col-6 collapse-brand">
                 <a href="../index.html">
-                  <img src="{{ asset('img/brand/blue.png') }}">
+                  <img src="{{ asset('img/brand/sistema-control-citas.png') }}">
                 </a>
               </div>
               <div class="col-6 collapse-close">
@@ -49,7 +49,7 @@
           </div>
           <!-- Navbar items -->
           <ul class="navbar-nav ml-auto">
-            
+
             <li class="nav-item">
               <a class="nav-link nav-link-icon" href="{{ route('register')}}">
                 <i class="ni ni-circle-08"></i>
@@ -62,7 +62,7 @@
                 <span class="nav-link-inner--text">Login</span>
               </a>
             </li>
-           
+
           </ul>
         </div>
       </div>
@@ -104,7 +104,7 @@
         <div class="col-xl-6">
           <ul class="nav nav-footer justify-content-center justify-content-xl-end">
             <li class="nav-item">
-              <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Template</a>
+              <a href="#" class="nav-link" target="_blank">Empresa</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link" target="_blank">Acerca De</a>

@@ -8,7 +8,7 @@
                   <h3 class="mb-0">Especialidades</h3>
                 </div>
                 <div class="col text-right">
-                  <a href="{{ url('specialties/create') }}" class="btn btn-sm btn-success">Nueva Espcialidad</a>
+                  <a href="{{ url('specialties/create') }}" class="btn btn-sm btn-success">Nueva Especialidad</a>
                 </div>
               </div>
             </div>
@@ -39,7 +39,7 @@
                     {{ $specialty->description }}
                     </td>
                     <td>
-                     
+
                       <form action="{{ url('/specialties/'.$specialty->id) }}" method="POST">
                         @csrf
                         @method('DELETE')

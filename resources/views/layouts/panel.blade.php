@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Sistema de Reserva deCitas | {{ config('app.name') }}</title>
+  <title>Sistema Control de Citas | {{ config('app.name') }}</title>
   <!-- Favicon -->
   <link href="{{ asset('img/brand/favicon.png') }}" rel="icon" type="image/png">
   <!-- Fonts -->
@@ -28,8 +28,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Brand -->
-      <a class="navbar-brand pt-0" href="./index.html">
-        <img src="{{ asset('img/brand/blue.png') }}" class="navbar-brand-img" alt="...">
+      <a class="navbar-brand pt-0" href="/home">
+        <img src="{{ asset('img/brand/sistema-control-citas.png') }}" class="navbar-brand-img" alt="...">
       </a>
       <!-- User -->
       <ul class="nav align-items-center d-md-none">
@@ -62,7 +62,7 @@
           <div class="row">
             <div class="col-6 collapse-brand">
               <a href="./index.html">
-                <img src="{{ asset('img/brand/blue.png') }}">
+                <img src="{{ asset('img/brand/sistema-control-citas.png') }}">
               </a>
             </div>
             <div class="col-6 collapse-close">
@@ -73,7 +73,7 @@
             </div>
           </div>
         </div>
-        
+
        @include('includes.panel.menu')
       </div>
     </div>
@@ -134,7 +134,7 @@
   @yield('scripts')
   <!-- Argon JS -->
   <script src="{{ asset('js/argon.js?v=1.0.0') }}"></script>
- 
+
 </body>
 
 </html>
